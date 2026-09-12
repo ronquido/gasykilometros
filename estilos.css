@@ -1,0 +1,97 @@
+:root {
+  --fondo: #f5f7fa;
+  --tarjeta: #ffffff;
+  --texto: #22262b;
+  --acento: #3a5a8c;
+  --sombra: rgba(0, 0, 0, 0.08);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background: var(--fondo);
+  color: var(--texto);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background: var(--acento);
+  padding: 0.75rem 1.5rem;
+}
+
+header nav {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.25rem 0;
+  border-bottom: 2px solid transparent;
+}
+
+header nav a:hover,
+header nav a.active {
+  border-bottom-color: #ffd7a8;
+}
+
+main {
+  flex: 1;
+  max-width: 60rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: var(--acento);
+}
+
+main p {
+  margin-bottom: 1.5rem;
+}
+
+nav.sections {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+a.card {
+  display: block;
+  background: var(--tarjeta);
+  color: var(--texto);
+  text-decoration: none;
+  padding: 1.25rem 1.75rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px var(--sombra);
+  font-weight: 600;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+a.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+}
+
+footer {
+  background: var(--acento);
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
