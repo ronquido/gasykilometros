@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilos.css">
+  <title>gasykilometros - Lean Management - Muda, Mura y Muri</title>
+  <meta name="description" content="Resumen de Muda, Mura y Muri: las 3M del Lean / Toyota Production System. Causas estructurales del desperdicio. Fernando Chica Aguilera, UPC 2026.">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="conserje.html">Conserje</a>
+      <a href="tecnologia.html">Tecnologia</a>
+      <a href="lean.html" class="active">Lean Management</a>
+      <a href="garage.html">Mi garage</a>
+      <a href="comentarios.html">Comentarios</a>
+    </nav>
+  </header>
+  <main class="articulo">
+    <p class="migues"><a href="lean.html">Lean Management</a> › Muda, Mura y Muri</p>
+    <h1>Muda, Mura y Muri — Las "3M" del Lean</h1>
+    <p class="subtitol">Resumen · Autor: Fernando Chica Aguilera · Postgrado UPC "Transformación Digital de la Gestión de Proyectos" · 2026</p>
+
+    <section>
+      <h2>1. Introducción</h2>
+      <p>El Toyota Production System identifica <strong>tres enemigos de la eficiencia</strong> (las "3M"):</p>
+      <ul>
+        <li><strong>Muda (無駄)</strong> → <em>desperdicio</em>: actividad que consume recursos sin crear valor.</li>
+        <li><strong>Mura (不均一)</strong> → <em>irregularidad / variabilidad</em>: inconsistencia y desequilibrio en la carga y el flujo.</li>
+        <li><strong>Muri (無理)</strong> → <em>sobrecarga</em>: exigir a personas o máquinas más de lo que pueden sostener.</li>
+      </ul>
+      <p><strong>Idea clave</strong>: la mayoría de organizaciones solo atacan el <em>muda</em> porque es visible y contable. Pero el TPS enseña que <strong>el muda suele ser un síntoma del mura y el muri</strong>, no la causa raíz. Eliminar desperdicio sin nivelar el flujo ni reducir la sobrecarga solo produce mejoras temporales: el desperdicio se regenera.</p>
+    </section>
+
+    <section>
+      <h2>2. Muda (desperdicio) — el síntoma visible</h2>
+      <p>Los 7+1 desperdicios clásicos:</p>
+      <ol>
+        <li><strong>Sobreproducción</strong> — producir más/antes de lo demandado (el peor: enmascara a los demás).</li>
+        <li><strong>Esperas</strong> — tiempo oculto por bloqueos, aprobaciones, dependencias.</li>
+        <li><strong>Transporte</strong> — movimientos innecesarios de materiales/información.</li>
+        <li><strong>Sobreprocesamiento</strong> — más trabajo/detalle del que el cliente requiere.</li>
+        <li><strong>Inventario</strong> — WIP acumulado que oculta problemas (analogía del lago con rocas).</li>
+        <li><strong>Movimiento</strong> — búsquedas, desplazamientos, cambios de contexto.</li>
+        <li><strong>Defectos</strong> — retrabajo, scrap, bugs.</li>
+        <li><strong>Talento desperdiciado</strong> — conocimiento y creatividad del equipo no utilizados (añadido moderno).</li>
+      </ol>
+    </section>
+
+    <section>
+      <h2>3. Mura (irregularidad) — la causa estructural</h2>
+      <p><strong>Definición</strong>: variabilidad en la demanda, la carga de trabajo o el flujo del proceso. Genera picos de sobrecarga alternados con valles de ociosidad.</p>
+      <p><strong>Ejemplos</strong>:</p>
+      <ul>
+        <li>Planificación en lotes: "lunes se planea, viernes se entrega" → pico de trabajo.</li>
+        <li>Requisitos que llegan en ráfagas al equipo de desarrollo.</li>
+        <li>Demanda estacional sin nivelación.</li>
+      </ul>
+      <p><strong>Remedios</strong>:</p>
+      <ul>
+        <li><strong>Heijunka</strong> (nivelación de la producción/carga): suavizar el mix y el volumen.</li>
+        <li><strong>Takt time</strong>: ritmar el trabajo según la demanda real del cliente.</li>
+        <li>Flujo continuo, lotes pequeños, <em>kanban</em> para regular la entrada de trabajo.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Muri (sobrecarga) — el coste humano y físico</h2>
+      <p><strong>Definición</strong>: imponer a personas, equipos o máquinas una exigencia superior a su capacidad sostenible.</p>
+      <p><strong>Ejemplos</strong>:</p>
+      <ul>
+        <li>Horas extra sistemáticas, plazos irreales ("crunch").</li>
+        <li>Máquinas operando por encima de su velocidad nominal.</li>
+        <li>Un único recurso especialista (cuello de botella) saturado de trabajo.</li>
+      </ul>
+      <p><strong>Consecuencias</strong>: defectos, averías, <em>burnout</em>, rotación — costes mayores que el beneficio obtenido. Éticamente inaceptable y económicamente absurdo.</p>
+      <p><strong>Remedios</strong>:</p>
+      <ul>
+        <li><strong>Nagara</strong>: diseño de trabajo que combina tareas de forma natural.</li>
+        <li>Estandarización del trabajo (<strong>standard work</strong>) dentro de capacidades realistas.</li>
+        <li>Balanceo de carga (<em>line balancing</em>), capacidad dimensionada por <em>takt time</em>.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>5. La jerarquía causal (el diagrama de las 3M)</h2>
+      <pre>
+        MURA (variabilidad)
+        /              \
+   genera            genera
+      ↓                  ↓
+   MURI (sobrecarga) → MUDA (desperdicio)
+      </pre>
+      <ul>
+        <li><strong>Mura</strong> está <em>aguas arriba</em> de los otros dos: la irregularidad fuerza sobrecargas (muri) en los picos y desperdicio (muda) en los valles.</li>
+        <li><strong>Muri</strong> también genera directamente <em>muda</em> (averías, defectos, fatiga).</li>
+        <li><strong>Implicación práctica</strong>: ¿por qué el desperdicio "vuelve"? Porque se está recortando el <em>muda</em> sin corregir el <em>mura</em> y el <em>muri</em> que lo regeneran.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>6. Ejemplo aplicado (proyecto / desarrollo de software)</h2>
+      <p>Un equipo elimina retrabajos (muda) y sube su productividad un mes, pero luego recae. Causa: los requisitos llegan en lotes quincenales (mura), la carga pica y el equipo va a contratiempo (muri), generando micro-paradas, bugs y decisiones precipitadas (muda). <strong>Solución correcta</strong>: nivelar la entrada de trabajo (heijunka con kanban, WIP limits), respetar la capacidad del equipo, y entonces el muda desaparece de forma sostenida.</p>
+    </section>
+
+    <section>
+      <h2>7. Puntos clave para retener</h2>
+      <ul>
+        <li><strong>Muda</strong> = síntoma; <strong>Mura</strong> y <strong>Muri</strong> = causas estructurales.</li>
+        <li>Atacar las 3M en orden: primero <em>nivelar</em> (mura), luego <em>respetar la capacidad</em> (muri), y el <em>muda</em> cae solo.</li>
+        <li>Se conecta con el triángulo de hierro: la sobrecarga (muri) destruye calidad y plazos a la vez.</li>
+        <li>Enfoque Lean completo = 3M + kaizen + respeto por las personas, no solo "cortar grasa".</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>8. Referencias consultadas</h2>
+      <ol>
+        <li>Ohno, T. (1988). <em>Toyota Production System: Beyond Large-Scale Production</em>. Productivity Press.</li>
+        <li>Liker, J. K. (2004). <em>The Toyota Way: 14 Management Principles from the World's Greatest Manufacturer</em>. McGraw-Hill.</li>
+        <li>Womack, J. P., &amp; Jones, D. T. (1996). <em>Lean Thinking</em>. Simon &amp; Schuster.</li>
+        <li>Metaphorex — "Muda, Mura, Muri": https://metaphorex.org/entries/muda-mura-muri</li>
+        <li>Fabrico.io — "Muda, Mura, Muri: The Three Wastes Most Lean Programs Only Half-Fix": https://fabrico.io/blog/muda-mura-muri</li>
+        <li>Lean Enterprise Institute — recursos sobre heijunka y flujo: https://www.lean.org</li>
+        <li>ASQ — Lean &amp; Toyota Production System: https://asq.org/quality-resources/lean</li>
+      </ol>
+    </section>
+
+    <nav class="sections">
+      <a href="lean.html" class="card">← Torna a Lean Management</a>
+    </nav>
+  </main>
+  <footer>
+    <p>gasykilometros — contenido sintetico con IA</p>
+  </footer>
+</body>
+</html>

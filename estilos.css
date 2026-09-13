@@ -147,3 +147,451 @@ footer {
   padding: 1rem;
   font-size: 0.9rem;
 }
+
+footer .footer-nota {
+  margin-top: 0.5rem;
+  font-size: 0.75rem;
+  opacity: 0.85;
+}
+
+/* ---- Páginas de artículo (convocatoria, etc.) ---- */
+
+main.articulo {
+  max-width: 64rem;
+}
+
+.migues {
+  font-size: 0.9rem;
+  color: #5c6470;
+  margin-bottom: 1rem;
+}
+
+.migues a {
+  color: var(--acento);
+  text-decoration: none;
+}
+
+.migues a:hover {
+  text-decoration: underline;
+}
+
+.subtitol {
+  font-size: 1.1rem;
+  color: #5c6470;
+  margin-bottom: 1.25rem;
+}
+
+h2 {
+  font-size: 1.4rem;
+  margin: 1.75rem 0 0.75rem;
+  padding-bottom: 0.25rem;
+  border-bottom: 2px solid var(--acento);
+  color: var(--acento);
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin: 1.25rem 0 0.5rem;
+  color: var(--texto);
+}
+
+main.articulo section {
+  margin-top: 1.25rem;
+}
+
+main.articulo ul {
+  padding-left: 1.25rem;
+  margin: 0.75rem 0;
+}
+
+main.articulo li {
+  margin-bottom: 0.5rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+  margin: 0.75rem 0 1rem;
+  background: var(--tarjeta);
+}
+
+table caption {
+  caption-side: top;
+}
+
+th {
+  background: var(--acento);
+  color: #fff;
+  text-align: left;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #ccd2da;
+}
+
+td {
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #ccd2da;
+  vertical-align: top;
+}
+
+tbody tr:nth-child(even) {
+  background: #eef1f6;
+}
+
+td:first-child {
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+p.aviso {
+  font-size: 0.95rem;
+  color: #5c6470;
+  border-left: 3px solid #d99a3a;
+  padding-left: 0.75rem;
+  background: #fdf6ec;
+  padding: 0.5rem 0.75rem;
+  margin: 0.75rem 0;
+}
+
+/* ============================================================
+   Seccion "Mi garage" (garage.html)
+   Todo el bloque va scopado a body.garaje: no afecta al resto
+   de paginas del sitio.
+   ============================================================ */
+
+html:has(body.garaje) {
+  scroll-behavior: smooth;
+}
+
+body.garaje {
+  --g-linea: #dde3ea;
+  --g-suave: #eef1f6;
+  --g-muted: #5c6470;
+}
+
+body.garaje main {
+  max-width: 66rem;
+}
+
+body.garaje main a {
+  color: var(--acento);
+}
+
+body.garaje code {
+  background: var(--g-suave);
+  border-radius: 0.25rem;
+  padding: 0.1rem 0.35rem;
+  font-size: 0.85em;
+}
+
+/* ---- Hero ---- */
+
+body.garaje .garaje-hero {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(140deg, #3a5a8c 0%, #2b4470 60%, #22375a 100%);
+  color: #fff;
+  border-radius: 1rem;
+  padding: 2.75rem 2rem;
+  box-shadow: 0 10px 28px rgba(34, 55, 90, 0.25);
+  margin-bottom: 2.5rem;
+}
+
+body.garaje .garaje-hero::after {
+  content: "";
+  position: absolute;
+  right: -6rem;
+  top: -6rem;
+  width: 22rem;
+  height: 22rem;
+  background: radial-gradient(circle, rgba(255, 215, 168, 0.28), transparent 62%);
+  pointer-events: none;
+}
+
+body.garaje .garaje-kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #ffd7a8;
+  margin-bottom: 0.6rem;
+}
+
+body.garaje .garaje-hero h1 {
+  color: #fff;
+  font-size: clamp(2rem, 5vw, 2.9rem);
+  margin-bottom: 0.6rem;
+}
+
+body.garaje .garaje-lead {
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 52rem;
+  margin-bottom: 0;
+}
+
+body.garaje .garaje-stats {
+  list-style: none;
+  padding: 1.25rem 0 0;
+  margin: 1.75rem 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.25);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9.5rem, 1fr));
+  gap: 1rem 1.5rem;
+}
+
+body.garaje .garaje-stats li {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 0.82rem;
+  line-height: 1.35;
+}
+
+body.garaje .garaje-stats strong {
+  display: block;
+  color: #fff;
+  font-size: 1.05rem;
+  margin-bottom: 0.15rem;
+}
+
+/* ---- Indice rapido ---- */
+
+body.garaje .garaje-indice {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 0.9rem;
+  margin: 1rem 0 2rem;
+}
+
+body.garaje a.garaje-mini {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  background: var(--tarjeta);
+  border: 1px solid var(--g-linea);
+  border-radius: 0.75rem;
+  padding: 0.6rem;
+  color: var(--texto);
+  text-decoration: none;
+  box-shadow: 0 2px 6px var(--sombra);
+  transition: transform 0.16s ease, box-shadow 0.16s ease, border-color 0.16s ease;
+}
+
+body.garaje a.garaje-mini:hover,
+body.garaje a.garaje-mini:focus-visible {
+  transform: translateY(-3px);
+  border-color: var(--acento);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+body.garaje a.garaje-mini img {
+  width: 4.75rem;
+  height: 3.5rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  flex: none;
+}
+
+body.garaje a.garaje-mini strong {
+  display: block;
+  font-size: 0.95rem;
+  line-height: 1.25;
+}
+
+body.garaje a.garaje-mini small {
+  display: block;
+  color: var(--g-muted);
+  font-size: 0.78rem;
+  margin-top: 0.1rem;
+}
+
+/* ---- Ficha de cada moto ---- */
+
+body.garaje .garaje-moto {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.5rem;
+  align-items: start;
+  background: var(--tarjeta);
+  border: 1px solid var(--g-linea);
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px var(--sombra);
+  padding: 1.5rem;
+  margin: 2rem 0;
+  scroll-margin-top: 1.5rem;
+}
+
+@media (min-width: 56rem) {
+  body.garaje .garaje-moto {
+    grid-template-columns: minmax(0, 25rem) minmax(0, 1fr);
+    gap: 1.75rem;
+  }
+}
+
+body.garaje .garaje-media {
+  margin: 0;
+}
+
+body.garaje .garaje-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px var(--sombra);
+  background: var(--g-suave);
+}
+
+body.garaje .garaje-media figcaption {
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--g-muted);
+  margin-top: 0.6rem;
+}
+
+body.garaje .garaje-body h2 {
+  margin-top: 0;
+  border-bottom: none;
+  padding-bottom: 0;
+  font-size: 1.5rem;
+}
+
+body.garaje .garaje-body h2 em {
+  color: var(--g-muted);
+  font-weight: 600;
+}
+
+body.garaje .garaje-resumen {
+  color: #3c434d;
+  font-size: 0.98rem;
+  margin-bottom: 0.9rem;
+}
+
+body.garaje .garaje-pills {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  padding: 0;
+  margin: 0 0 1.2rem;
+}
+
+body.garaje .garaje-pills li {
+  background: var(--g-suave);
+  border: 1px solid var(--g-linea);
+  color: var(--acento);
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.22rem 0.65rem;
+  border-radius: 999px;
+}
+
+/* ---- Ficha tecnica plegable ---- */
+
+body.garaje .garaje-ficha {
+  border: 1px solid var(--g-linea);
+  border-radius: 0.6rem;
+  background: #fbfcfe;
+  margin: 0 0 1.4rem;
+  overflow: hidden;
+}
+
+body.garaje .garaje-ficha summary {
+  cursor: pointer;
+  padding: 0.7rem 0.9rem;
+  background: var(--g-suave);
+  color: var(--acento);
+  font-weight: 600;
+  font-size: 0.92rem;
+}
+
+body.garaje .garaje-ficha[open] summary {
+  border-bottom: 1px solid var(--g-linea);
+}
+
+body.garaje .garaje-ficha .spec-table {
+  margin: 0;
+  font-size: 0.88rem;
+  background: transparent;
+}
+
+body.garaje .garaje-ficha .spec-table td {
+  border-left: none;
+  border-right: none;
+}
+
+body.garaje .garaje-ficha .spec-table td:first-child {
+  width: 38%;
+  white-space: normal;
+  color: var(--g-muted);
+}
+
+/* ---- Balance (pros / contras) ---- */
+
+body.garaje .garaje-balance {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 1rem;
+  margin-top: 1.4rem;
+}
+
+body.garaje .garaje-pro,
+body.garaje .garaje-contra {
+  border-radius: 0.6rem;
+  padding: 0.9rem 1rem;
+  font-size: 0.9rem;
+}
+
+body.garaje .garaje-pro {
+  background: #eef6ef;
+  border-left: 4px solid #4b8b58;
+}
+
+body.garaje .garaje-contra {
+  background: #fdf6ec;
+  border-left: 4px solid #d99a3a;
+}
+
+body.garaje .garaje-pro h4,
+body.garaje .garaje-contra h4 {
+  margin: 0 0 0.45rem;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+}
+
+body.garaje .garaje-pro h4 {
+  color: #3c7346;
+}
+
+body.garaje .garaje-contra h4 {
+  color: #a06d18;
+}
+
+body.garaje .garaje-pro ul,
+body.garaje .garaje-contra ul {
+  margin: 0;
+  padding-left: 1.1rem;
+}
+
+body.garaje .garaje-pro li,
+body.garaje .garaje-contra li {
+  margin-bottom: 0.35rem;
+}
+
+/* ---- Tablas anchas y referencias ---- */
+
+body.garaje .tabla-scroll {
+  overflow-x: auto;
+}
+
+body.garaje .tabla-scroll table {
+  min-width: 44rem;
+}
+
+body.garaje .garaje-refs {
+  padding-left: 1.4rem;
+  font-size: 0.9rem;
+}
+
+body.garaje .garaje-refs li {
+  margin-bottom: 0.55rem;
+  color: #3c434d;
+}
