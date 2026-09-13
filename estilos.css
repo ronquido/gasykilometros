@@ -595,3 +595,140 @@ body.garaje .garaje-refs li {
   margin-bottom: 0.55rem;
   color: #3c434d;
 }
+
+/* ============================================================
+   Seccion Tecnologia (tecnologia.html)
+   Reutiliza el sistema visual de articulos (bloque "garaje",
+   activado con class="garaje tecnologia" en el body) y anade
+   solo los componentes propios: cifras, barras y pasos.
+   ============================================================ */
+
+body.tecnologia .tec-cifras {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0 1.5rem;
+}
+
+body.tecnologia .tec-cifra {
+  background: var(--tarjeta);
+  border: 1px solid var(--g-linea);
+  border-left: 4px solid var(--acento);
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px var(--sombra);
+  padding: 1rem 1.15rem;
+}
+
+body.tecnologia .tec-num {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--acento);
+  line-height: 1.15;
+  margin-bottom: 0.35rem;
+}
+
+body.tecnologia .tec-cifra p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #3c434d;
+}
+
+body.tecnologia .barras {
+  list-style: none;
+  padding: 0;
+  margin: 1.25rem 0 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+body.tecnologia .barras li {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.2rem;
+  align-items: center;
+  font-size: 0.85rem;
+}
+
+@media (min-width: 44rem) {
+  body.tecnologia .barras li {
+    grid-template-columns: 14rem minmax(0, 1fr) 4.5rem;
+    gap: 0.75rem;
+  }
+}
+
+body.tecnologia .barra-etq {
+  color: #3c434d;
+}
+
+body.tecnologia .barra-etq small {
+  color: var(--g-muted);
+}
+
+body.tecnologia .barra-pista {
+  display: block;
+  background: var(--g-suave);
+  border-radius: 999px;
+  height: 0.75rem;
+  overflow: hidden;
+}
+
+body.tecnologia .barra {
+  display: block;
+  height: 100%;
+  border-radius: 999px;
+  background: linear-gradient(90deg, #4a6ea3, var(--acento));
+}
+
+body.tecnologia .barra-ok {
+  background: linear-gradient(90deg, #4b8b58, #3c7346);
+}
+
+body.tecnologia .barra-val {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  color: var(--acento);
+}
+
+body.tecnologia .tec-pasos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1rem;
+  margin: 1.25rem 0;
+}
+
+body.tecnologia .tec-paso {
+  display: flex;
+  gap: 0.85rem;
+  background: var(--tarjeta);
+  border: 1px solid var(--g-linea);
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px var(--sombra);
+  padding: 1rem 1.15rem;
+}
+
+body.tecnologia .tec-paso span {
+  flex: none;
+  width: 1.9rem;
+  height: 1.9rem;
+  border-radius: 50%;
+  background: var(--acento);
+  color: #fff;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+}
+
+body.tecnologia .tec-paso p {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #3c434d;
+}
+
+body.tecnologia main code {
+  word-break: break-all;
+}
