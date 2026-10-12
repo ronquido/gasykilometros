@@ -81,10 +81,11 @@ main p.aviso-legal {
 }
 
 nav.sections {
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(7.5rem, 1fr));
+  gap: 0.75rem;
+  max-width: 42rem;
+  margin: 1.5rem auto 0;
 }
 
 a.card {
@@ -92,16 +93,32 @@ a.card {
   background: var(--tarjeta);
   color: var(--texto);
   text-decoration: none;
-  padding: 1.25rem 1.75rem;
-  border-radius: 0.5rem;
+  border-radius: 0.6rem;
   box-shadow: 0 2px 6px var(--sombra);
-  font-weight: 600;
+  overflow: hidden;
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
 a.card:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.12);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.14);
+}
+
+a.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+a.card .card-titulo {
+  display: block;
+  padding: 0.45rem 0.5rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--acento);
 }
 
 form {
@@ -251,6 +268,104 @@ p.aviso {
   background: #fdf6ec;
   padding: 0.5rem 0.75rem;
   margin: 0.75rem 0;
+}
+
+/* ---- Entradas tipo blog (Novedades, Taller) ---- */
+
+article.entrada {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  background: var(--tarjeta);
+  border: 1px solid #dde3ea;
+  border-radius: 0.75rem;
+  box-shadow: 0 2px 8px var(--sombra);
+  padding: 1.25rem 1.5rem;
+  margin: 1.5rem 0;
+}
+
+article.entrada img.entrada-mini {
+  flex: none;
+  width: 10rem;
+  height: 7.5rem;
+  object-fit: cover;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px var(--sombra);
+}
+
+@media (max-width: 42rem) {
+  article.entrada {
+    flex-direction: column;
+  }
+  article.entrada img.entrada-mini {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 4 / 3;
+  }
+}
+
+article.entrada .entrada-cuerpo {
+  flex: 1;
+  min-width: 0;
+}
+
+article.entrada time.entrada-fecha {
+  display: inline-block;
+  font-size: 0.8rem;
+  color: #5c6470;
+  margin-bottom: 0.5rem;
+}
+
+article.entrada h2 {
+  margin-top: 0.25rem;
+  font-size: 1.25rem;
+}
+
+article.entrada h2 a {
+  color: var(--acento);
+  text-decoration: none;
+}
+
+article.entrada h2 a:hover {
+  text-decoration: underline;
+}
+
+article.entrada .entrada-resumen {
+  color: #3c434d;
+  font-size: 0.95rem;
+  margin-bottom: 0.75rem;
+}
+
+article.entrada .entrada-enlace {
+  font-weight: 600;
+  color: var(--acento);
+  text-decoration: none;
+}
+
+article.entrada .entrada-enlace:hover {
+  text-decoration: underline;
+}
+
+/* ---- Figura reutilizable en articulos (fuera de body.garaje) ---- */
+
+figure.garaje-media {
+  margin: 1.25rem 0 1.75rem;
+}
+
+figure.garaje-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px var(--sombra);
+  background: var(--g-suave);
+}
+
+figure.garaje-media figcaption {
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: #5c6470;
+  margin-top: 0.5rem;
 }
 
 /* ============================================================
