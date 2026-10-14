@@ -34,6 +34,7 @@ taller.html                         Índice de guías de Taller
 taller-beverly-350.html             Guía: Piaggio Beverly 350 Sport Touring
 taller-maxsym-tl-508.html           Guía: SYM Maxsym TL 508
 taller-bmw-r1200gs.html             Guía: BMW R 1200 GS (2011)
+taller-interceptor-650.html         Guía: Royal Enfield Interceptor 650 (dinámica y tuning performance)
 garage.html                         Mi garage: 7 fichas técnicas de motos
 comentarios.html                    Formulario de comentarios (Netlify Forms)
 comentarios-exito.html              Confirmación tras enviar un comentario
