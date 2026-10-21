@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450">
+  <rect width="600" height="450" fill="#3a5a8c"/>
+  <circle cx="520" cy="60" r="160" fill="#4a6ea3" opacity="0.45"/>
+  <circle cx="40" cy="410" r="140" fill="#2f4a70" opacity="0.6"/>
+  <g transform="translate(90,90)">
+    <line x1="0" y1="250" x2="440" y2="250" stroke="#ffffff" stroke-width="4" opacity="0.9"/>
+    <line x1="0" y1="250" x2="0" y2="20" stroke="#ffffff" stroke-width="4" opacity="0.9"/>
+    <g transform="translate(10,0)">
+      <rect x="0" y="70" width="52" height="180" rx="6" fill="#ffd7a8"/>
+      <rect x="70" y="50" width="52" height="200" rx="6" fill="#ffb06b"/>
+      <rect x="140" y="30" width="52" height="220" rx="6" fill="#ff8f4f"/>
+      <rect x="210" y="10" width="52" height="240" rx="6" fill="#e07030"/>
+      <rect x="280" y="75" width="46" height="175" rx="6" fill="#9fc1e8"/>
+      <rect x="344" y="95" width="46" height="155" rx="6" fill="#7fa8d4"/>
+      <rect x="400" y="115" width="30" height="135" rx="6" fill="#5f8cc0"/>
+    </g>
+    <text x="10" y="286" fill="#ffffff" font-family="system-ui, sans-serif" font-size="20" font-weight="600">precio (marcas tradicionales)</text>
+    <text x="278" y="286" fill="#ffd7a8" font-family="system-ui, sans-serif" font-size="20" font-weight="600">mercado &#8220;R&#8221;</text>
+    <g transform="translate(360,18)">
+      <path d="M0 20 a12 12 0 0 1 12 -12 h46 a12 12 0 0 1 12 12 v28 a12 12 0 0 1 -12 12 h-46 a12 12 0 0 1 -12 -12 z" fill="#ffffff" transform="rotate(-14)"/>
+      <path d="M34 40 l8 18" stroke="#3a5a8c" stroke-width="6" stroke-linecap="round"/>
+      <circle cx="34" cy="58" r="8" fill="#3a5a8c"/>
+    </g>
+  </g>
+</svg>

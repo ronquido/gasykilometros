@@ -27,10 +27,13 @@ El sitio se articula en **5 secciones**, accesibles desde un menú común presen
 ```
 index.html                          Portada / landing
 novedades.html                      Índice de entradas de Novedades
+novedades-cbr500r-four.html         Entrada: Honda CBR500R Four (tetracilíndrica 502 cc)
+novedades-mercado-moto-espana.html  Entrada: análisis del mercado de la moto en España
 novedades-zontes-552h.html          Entrada: Zontes 552H (EICMA 2025)
 novedades-voge-sr450x.html          Entrada: Voge SR450X (crossover bicilíndrico A2)
 novedades-moto-guzzi-v85tt.html     Entrada: Moto Guzzi V85 TT (trail media con cardán)
 taller.html                         Índice de guías de Taller
+taller-frenos.html                  Guía: mantenimiento de frenos (purga, líquido, pastillas)
 taller-beverly-350.html             Guía: Piaggio Beverly 350 Sport Touring
 taller-maxsym-tl-508.html           Guía: SYM Maxsym TL 508
 taller-bmw-r1200gs.html             Guía: BMW R 1200 GS (2011)
